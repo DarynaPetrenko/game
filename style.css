@@ -1,0 +1,150 @@
+body{
+    height: 100vh;
+    width: 100%;
+}
+.game{
+    width: 450px;
+    height: 450px;
+    background-color: aquamarine;
+    position: relative;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid green;
+}
+
+.start-btn{
+    width: 400px;
+    height: 150px;
+    font-size: 40px;
+    text-align: center;
+    border: 3px solid green;
+    background-color: aquamarine;
+    border-radius: 30px;
+    position: relative;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.finish-game{
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid green;
+    background-color: aquamarine;
+    border-radius: 20px;
+    position: relative;
+    top: -40%;
+    right: -82%;
+    display: none;
+}
+
+.start-btn:hover, .finish-game:hover, .again:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.cell{
+    width: 150px;
+    height: 150px;
+    border: 1px solid green;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    font-weight: bold;
+    color: green;
+}
+
+.message{
+    position: relative;
+    bottom: -22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+}
+.message p{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.line{
+    display: block;
+    background-color: red;
+    border: none;
+    position: absolute;
+    z-index: 3;
+
+}
+
+.score{
+    width: 200px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border: 5px solid green;
+    font-weight: bold;
+    font-size: 25px;
+    color: green;
+    text-align: center;
+    position: relative;
+    top: -50%;
+    right: -80%;
+    display: none;
+}
+
+.o, .x{
+    display: inline-block;
+}
+
+
+.modal{
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    background: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border: 5px solid green;
+    
+}
+
+.modal-backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(76, 161, 79, 0.45);
+    z-index: 1;
+    display: none;
+}
+
+.again{
+    width: 100px;
+    height: 30px;
+    font-size: 17px;
+    text-align: center;
+    border: 2px solid green;
+    background-color: aquamarine;
+    border-radius: 20px;
+    position: relative;
+    top: 75%;
+    left: 40%;
+}
+
+.modal p{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    width: 290px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
